@@ -1,0 +1,54 @@
+#gallery{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: "one two three four";
+
+    img{
+        height: 400px;
+        width: 100%;
+    }
+
+    #milkbottles{
+        grid-area: "one";
+    }
+
+    #orange{
+        grid-area: "two";
+    }
+
+    #cone{
+        grid-area: "three";
+    }
+
+    #sugarcubes{
+        grid-area: "four";
+    }
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas: 
+        "one two" 
+        "three four";
+
+        img{
+            height: 420px;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 850px) {
+
+        img{
+            height: 400px;
+        }
+    }
+
+    @media (max-width: 700px) {
+
+        img{
+            height: 240px;
+        }
+    }
+}
