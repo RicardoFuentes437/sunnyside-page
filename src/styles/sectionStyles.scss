@@ -91,12 +91,12 @@
 
     #graphic-design{
         background: url('../../public/images/desktop/image-graphic-design.jpg') no-repeat;
-        background-size: 100% auto;
+        background-size: 100% 100%;
     }
 
     #photography{
         background: url('../../public/images/desktop/image-photography.jpg') no-repeat;
-        background-size: 100% auto;
+        background-size: 100% 100%;
     }
 
     @media (max-width: 1000px) {
@@ -162,6 +162,28 @@
 
         #type-1{
             flex-direction: column-reverse;
+        }
+    }
+
+    @media (max-width: 400px) {
+        #type-1, #type-2, .type-3{
+
+            .text-section{
+
+                h2{
+                    padding: 0 20px 0 20px;
+                }
+
+                p{
+                    padding: 0 20px 0 20px;
+                }
+
+                a{
+                    margin: 0 20px 0 20px;
+                }
+                
+            }
+            
         }
     }
 }
